@@ -1,0 +1,55 @@
+
+
+/*Contacto*/
+.contacto {
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+      "nav nav nav nav"
+      "header header header header"
+      "main main main main"
+      "final final final final"
+      "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+  
+    nav {
+      grid-area: nav;
+    }
+    .header {
+      grid-area: header;
+    }
+    main {
+      grid-area: main;
+      text-align: center;
+      padding: 5%;
+    }
+    .final {
+      grid-area: final;
+      padding: 5%;
+      background-color: $negro;
+      color: $blanco;
+      h2{
+        text-align: center;
+      }
+      div{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+      }
+      p{
+        margin: 2%;
+      }
+    }
+    .footer {
+      grid-area: footer;
+      color: $blanco;
+      .copyright {
+        color: $blanco;
+        background-color: $negro;
+      }
+    }
+  }

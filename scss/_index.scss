@@ -1,0 +1,83 @@
+
+
+/*index*/
+.index {
+    display: grid;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    grid-template-areas:
+      "nav nav nav nav"
+      "header header header header"
+      "contenido contenido contenido lateral"
+      "contenido contenido contenido lateral"
+      "final final final final"
+      "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    font-family: "Quicksand", sans-serif;
+    nav {
+      grid-area: nav;
+    }
+    .header {
+      grid-area: header;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      .texto-encima{
+        color: $blanco;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50%;
+        color: $blanco;
+    }
+      }
+  
+    .contenido {
+      padding: 10%;
+      grid-area: contenido;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .lateral {
+      grid-area: lateral;
+      background-color: $gris;
+      font-family: "Dancing Script", cursive;
+      color: $blanco;
+      display: flex;
+      justify-content:space-around ;
+      flex-direction: column;
+      text-align: center;
+    }
+    .final {
+      grid-area: final;
+      text-align: center;
+      padding-top: 5%;
+      .tarjetas{
+        display: flex;
+        justify-content: space-around;
+        padding: 5%;
+        .card{
+          margin: 2%;
+        }
+      }
+    }
+    .footer {
+      grid-area: footer;
+      color: $blanco;
+      .copyright {
+        color: $blanco;
+        background-color: $negro;
+      }
+    }
+  }

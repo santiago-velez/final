@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*Variables*/
+/*Animaciones & Transiciones*/
+.index .contenido {
+  background-color: #ffffff;
+  color: #000000;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-fill-mode: both; }
+
+@keyframes example {
+  from {
+    background-color: #ffffff;
+    color: #000000; }
+  to {
+    background-color: #212529;
+    color: #ffffff; } }
+
+.contacto main {
+  background-color: #ffffff;
+  color: #000000;
+  animation-name: example2;
+  animation-duration: 10s;
+  animation-fill-mode: both; }
+
+@keyframes example2 {
+  from {
+    background-color: #ffffff;
+    color: #000000; }
+  to {
+    background-color: #000000;
+    color: #ffffff; } }
+
+/*index*/
+.index {
+  display: grid;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  grid-template-areas: "nav nav nav nav" "header header header header" "contenido contenido contenido lateral" "contenido contenido contenido lateral" "final final final final" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  font-family: "Quicksand", sans-serif; }
+  .index nav {
+    grid-area: nav; }
+  .index .header {
+    grid-area: header;
+    position: relative;
+    display: inline-block;
+    text-align: center; }
+    .index .header .texto-encima {
+      color: #ffffff;
+      position: absolute;
+      top: 10px;
+      left: 10px; }
+    .index .header .centrado {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50%;
+      color: #ffffff; }
+  .index .contenido {
+    padding: 10%;
+    grid-area: contenido;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+  .index .lateral {
+    grid-area: lateral;
+    background-color: #212529;
+    font-family: "Dancing Script", cursive;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center; }
+  .index .final {
+    grid-area: final;
+    text-align: center;
+    padding-top: 5%; }
+    .index .final .tarjetas {
+      display: flex;
+      justify-content: space-around;
+      padding: 5%; }
+      .index .final .tarjetas .card {
+        margin: 2%; }
+  .index .footer {
+    grid-area: footer;
+    color: #ffffff; }
+    .index .footer .copyright {
+      color: #ffffff;
+      background-color: #000000; }
+
+/*Contacto*/
+.contacto {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  width: 100%;
+  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "final final final final" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px; }
+  .contacto nav {
+    grid-area: nav; }
+  .contacto .header {
+    grid-area: header; }
+  .contacto main {
+    grid-area: main;
+    text-align: center;
+    padding: 5%; }
+  .contacto .final {
+    grid-area: final;
+    padding: 5%;
+    background-color: #000000;
+    color: #ffffff; }
+    .contacto .final h2 {
+      text-align: center; }
+    .contacto .final div {
+      display: flex;
+      justify-content: space-between;
+      padding: 5%; }
+    .contacto .final p {
+      margin: 2%; }
+  .contacto .footer {
+    grid-area: footer;
+    color: #ffffff; }
+    .contacto .footer .copyright {
+      color: #ffffff;
+      background-color: #000000; }
+
+/*Nosotros (about)*/
+.nosotros {
+  display: grid;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  grid-template-areas: "nav nav nav nav" "header header header header" "main main main aside" "main main main aside" "final final final final" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  font-family: "Quicksand", sans-serif; }
+  .nosotros nav {
+    grid-area: nav; }
+  .nosotros .header {
+    grid-area: header;
+    padding: 5%;
+    background-color: #000000; }
+    .nosotros .header h1 {
+      text-align: center;
+      padding: 5%;
+      color: #ffffff; }
+    .nosotros .header .tarjetas {
+      display: flex;
+      justify-content: space-around; }
+    .nosotros .header .card {
+      margin: 2%; }
+  .nosotros main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%; }
+    .nosotros main h1 h2 {
+      text-align: center; }
+  .nosotros aside {
+    grid-area: aside;
+    padding: 5%; }
+  .nosotros .final {
+    grid-area: final; }
+  .nosotros .footer {
+    grid-area: footer;
+    color: #ffffff; }
+    .nosotros .footer .copyright {
+      color: #ffffff;
+      background-color: #000000; }
+
+/*Productos*/
+.productos {
+  display: grid;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "final final final final" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  font-family: "Quicksand", sans-serif; }
+  .productos nav {
+    grid-area: nav; }
+  .productos .header {
+    grid-area: header;
+    background-color: #000000; }
+    .productos .header h1 {
+      text-align: center;
+      padding: 5%;
+      background-color: #000000;
+      color: #ffffff; }
+  .productos main {
+    grid-area: main;
+    padding: 5%; }
+    .productos main .qrs {
+      display: flex;
+      justify-content: space-around; }
+      .productos main .qrs .card {
+        margin: 2%; }
+  .productos .final {
+    grid-area: final;
+    padding: 5%;
+    background-color: #000000;
+    color: #ffffff; }
+    .productos .final h2 {
+      text-align: center;
+      padding: 5%; }
+  .productos .footer {
+    grid-area: footer;
+    color: #ffffff; }
+    .productos .footer .copyright {
+      color: #ffffff;
+      background-color: #000000; }
+
+/*Trabajo*/
+.trabajo {
+  display: grid;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "final final final final" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  font-family: "Quicksand", sans-serif; }
+  .trabajo nav {
+    grid-area: nav; }
+  .trabajo .header {
+    grid-area: header;
+    background-color: #000000; }
+    .trabajo .header h1 {
+      padding: 5%;
+      text-align: center;
+      background-color: #000000;
+      color: #ffffff; }
+  .trabajo main {
+    grid-area: main;
+    text-align: center;
+    padding: 5%; }
+    .trabajo main section {
+      display: flex;
+      justify-content: space-around; }
+  .trabajo .final {
+    grid-area: final; }
+  .trabajo .footer {
+    grid-area: footer;
+    color: #ffffff; }
+    .trabajo .footer .copyright {
+      color: #ffffff;
+      background-color: #000000; }
+
+/* Cada @import está relacionado a un archivo HTML*/

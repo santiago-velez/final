@@ -1,0 +1,40 @@
+
+/*Animaciones & Transiciones*/
+
+.index .contenido {
+    background-color: $blanco;
+    color: $negro;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes example {
+    from {
+      background-color: $blanco;
+      color: $negro;
+    }
+    to {
+      background-color: $gris;
+      color: $blanco;
+    }
+  }
+  
+  .contacto main {
+    background-color: $blanco;
+    color: $negro;
+    animation-name: example2;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes example2 {
+    from {
+      background-color: $blanco;
+      color: $negro;
+    }
+    to {
+      background-color: $negro;
+      color: $blanco;
+    }
+  }
